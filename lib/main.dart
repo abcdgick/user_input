@@ -40,7 +40,12 @@ class _CounterState extends State<Counter> {
     return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Image.asset('images/astolfo.jpg', width: 600, height: 450),
+          Image.asset(
+            'images/astolfo.jpg',
+            width: 600,
+            height: 450,
+          ),
+          //Image.network('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
           const SizedBox(height: 16),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -61,7 +66,7 @@ void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(
-        body: Center(child: Counter()),
+        body: Counter(),
       ),
     ),
   );
